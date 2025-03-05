@@ -13,7 +13,7 @@ weatherBtn.onclick = () => {
     const cityName = locationInput.value.trim();
 
     if (cityName) {
-        fetch(`${BASE_URL}?q=${cityName}&appid=${API_KEY}&units=metric&lang=ru`)
+        fetch(`${BASE_URL}?q=${cityName}&appid=${API_KEY}&units=metric`)
             .then(response => {
                 if (response.status) {
                     return response.json();
